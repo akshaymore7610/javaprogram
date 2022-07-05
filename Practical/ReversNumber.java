@@ -1,3 +1,6 @@
+/*
+ *@ Author Akshay More
+ */
 package SwitchX;
 
 public class ReversNumber {
