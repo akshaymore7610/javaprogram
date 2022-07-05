@@ -1,5 +1,5 @@
 /*
- *@ Authore Akshay More
+ *@ Author Akshay More
  */
 package SwitchX;
 
