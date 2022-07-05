@@ -1,3 +1,6 @@
+/*
+ *@ Author Akshay More
+ */
 class Nastedswitch{
 
 public static void main(String[] args){
