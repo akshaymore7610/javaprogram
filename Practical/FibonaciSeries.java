@@ -1,3 +1,6 @@
+/*
+ *@ Author Akshay More
+ */
 class FibonaciSeries {
 
 	public static void main(String[] args) {
