@@ -1,4 +1,7 @@
- class FindFactorial {
+/*
+ *@ Author Akshay More
+ */
+class FindFactorial {
 
 	public static void main(String[] args) {
 
