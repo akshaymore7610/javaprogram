@@ -1,3 +1,6 @@
+/*
+ *@ Author Akshay More
+ */
 class Palindrome{
 
 public static void main(String [] args){
