@@ -1,3 +1,6 @@
+/*
+ *@ Author Akshay More
+ */
 class ForLoop{
 
 public static void main(String [] args){
