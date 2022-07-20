@@ -1,7 +1,7 @@
 /*
  *@ Author Akshay More
  */
-class Nastedswitch{
+class NastedSwitch{
 
 public static void main(String[] args){
 
