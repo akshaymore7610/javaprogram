@@ -1,7 +1,7 @@
+package weeksix;
 /*
  * @Author Akshay More
  */
-package weeksix;
 interface ServlatAPI {
 	void m1();
 
