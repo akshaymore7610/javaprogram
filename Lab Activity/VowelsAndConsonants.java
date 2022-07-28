@@ -5,7 +5,7 @@ package weekeight;
 
 import java.util.Scanner;
 
-public class vowelsAndConsonants {
+public class VowelsAndConsonants {
 
 	public static void main(String[] args) {
 		
