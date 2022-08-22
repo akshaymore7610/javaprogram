@@ -1,5 +1,5 @@
 /*
- *@ Athor Akshay More
+ *@ Author Akshay More
  */
 package akshaymore;
 import java.util.*;
