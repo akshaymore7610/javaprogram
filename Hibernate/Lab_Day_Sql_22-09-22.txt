@@ -1,0 +1,65 @@
+# Use Database
+use akshay;
+# 1 Create table Employee
+create table EMPLOYEE(
+employee_id int(6),
+last_name varchar(25),
+job_id varchar(10),
+salary int(8),
+comm_pct int(4),
+mgr_id int(6),
+department_id int(4) );
+
+# 3 Display last_name, job_id, employee_id for each employee with employee_id appearing first.
+select employee_id, last_name, job_id from Employee;
+
+# 4 Display the details of all employees of department 60
+select employee_id, last_name, job_id, salary, comm_pct, mgr_id, department_id from employee where department_id = 60; 
+
+# 5 Display the employee details of the employee who’s last_name is King.
+select  last_name, employee_id,job_id, salary, comm_pct,mgr_id, department_id from employee where last_name = 'King';
+
+# 6 Display unique job_id from EMPLOYEE table. Give alias name to the column as JOB_TITLE.
+select distinct job_id as job_title from employee;
+
+# 7 Display last_name, salary and salary increase of Rs300. Give the new column name as ‘Increased Salary’.
+select salary, (salary+300) as 'increased_salary' from employee;
+
+# 8 Display last_name, salary and annual compensation of all employees, plus a onetime bonus of Rs 100. Give an alias name to the column displaying annual compensation. 
+SELECT last_name, salary, (salary*12)+100 as annual_compensation FROM employee;
+
+# 9 Display the details of those employees who get commission
+select * from employee where comm_pct is not null ;
+
+# 10 .Display the details of those employees who do not get commission.
+select * from employee where comm_pct is null;
+
+# 11 Display the Employee_id, Department_id and Salary all employees whose salary is greater than 5000.
+select employee_id, department_id, salary from employee where salary >= 5000;
+
+# 12 Display the Last_Name and Salary of all employees whose salary is between 4000and 7000.
+select last_name, salary from employee where salary between 4000 and 7000;
+
+# 13 Display the details of all employees whose salary is either 6000 or 6500 or 7000.
+select * from employee where salary=6000 or salary=6500 or salary=7000;
+
+# 14 Display the details of all those employees who work either in department 10 or 20 or 30 or 50. 
+select * from employee where department_id=10 or department_id=30 or department_id=30 or department_id=50;
+
+# 15 Display the details of all employees whose salary is not equal to 5000.
+select * from employee where salary !=5000; 
+
+# 16 Display the details of all the CLERKS working in the organization
+select * from employee where job_id = 'SH_CLERK';
+
+# 17 Update the job_id’s of the employees who earn more than 5000 to Grade_A. Display the table EMPLOYEE after updating.
+update employee set job_id = 'GRADE_A' where salary >5000;
+
+# 18 .Display the details of all those employees who are either CLERK or PROGRAMMER or ASSISTANT.
+select * from employee where job_id = 'SH_CLERK 'or job_id='IT_PROG' or job_id='AD_ASST';
+
+# 19 Display those employees from the EMPLOYEE table whose designation is CLERK and salary is less than 3000.
+select * from employee where job_id='SH_CLERK' and salary <3000;
+
+# 20 Display those employees Last_Name, Mgr_id from the EMPLOYEE table whose salary is above 3000 and work under Manager 101.
+select last_name, mgr_id from employee where salary >3000 and mgr_id = 101;
